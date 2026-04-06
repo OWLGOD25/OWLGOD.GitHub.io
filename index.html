@@ -4,6 +4,9 @@
     <title>Tyron Fajardo Portfolio</title>
 
     <style>
+
+    html { scroll-behavior: smooth; }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
@@ -24,8 +27,8 @@
         }
 
         section {
-            padding: 20px;
-            max-width: 800px;
+            padding: 40px 20px;
+            max-width: 900px;
             margin: auto;
         }
 
@@ -43,21 +46,25 @@
 
             .card {
     background-color: #1f1f1f;
-    padding: 15px;
-    margin-top: 15px;
+    padding: 20px;
+    margin-top: 20px;
     border-radius: 10px;
+    box-shadow : 0 0 10px rgba(0, 255, 204, 0.1);
 }
-.card:hover {
-    transform: scale(1.03);
+.card {
     transition: 0.3s;
 }
 
+.card:hover {
+    transform: scale(1.03);
+}
 nav {
     background-color: #1f1f1f;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -74,16 +81,18 @@ nav a:hover {
 .btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #00ffcc;
     color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background-color: #00ccaa;
+    transform: scale(1.05);
 }
 
     </style>
@@ -106,7 +115,7 @@ nav a:hover {
     <p>Aspiring UI Designer focused on creating intuitive and engaging player experiences</p>
 </header>
 
-<section>
+<section id = "about">
     <h2>About Me</h2>
    <p>
 I am a game development student with a strong interest in UI design and creating intuitive player experiences.
@@ -114,7 +123,7 @@ I enjoy designing clean, user-friendly interfaces and improving gameplay through
 </p>
 </section>
 
-<section>
+<section id = "projects">
     <h2>Projects</h2>
 
 <div class="card">
@@ -133,18 +142,19 @@ I enjoy designing clean, user-friendly interfaces and improving gameplay through
 </div>
 </section>
 
-<section>
+<section id = "skills">
     <h2>Skills</h2>
     <p>Unity, Unreal Engine, C#, C++, UI Design</p>
     <p>Image would be here but I dont have one yet</p>
     <img src="yourimage.png" width="100%">
 </section>
 
-<section>
+<section id = "contact">
     <h2>Contact</h2>
     <p>Email: tyronjf44@gmail.com</p>
     <p><a href="https://github.com/OWLGOD25">GitHub</a></p>
 </section>
 
 </body>
+
 </html>
